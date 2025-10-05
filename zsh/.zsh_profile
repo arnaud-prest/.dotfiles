@@ -1,0 +1,11 @@
+export XDG_CONFIG_HOME=$HOME/.config
+VIM="nvim"
+
+export GIT_EDITOR=$VIM
+export DOTFILES=$HOME/.dotfiles 
+
+# Fzf config
+source ~/.fzf.zsh
+
+# Local bin
+export PATH=~/.local/bin:$PATH
