@@ -9,3 +9,6 @@ source ~/.fzf.zsh
 
 # Local bin
 export PATH=~/.local/bin:$PATH
+
+# Aliases
+alias python="python3"
