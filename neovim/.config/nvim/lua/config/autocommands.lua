@@ -43,3 +43,14 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     vim.lsp.buf.format { name = 'efm', async = true }
   end,
 })
+
+-- Make backspace delete whole world
+-- local backspace_group = vim.api.nvim_create_augroup('BackspaceWord', { clear = true }) vim.api.nvim_create_autocmd('FileType', {
+--   group = backspace_group,
+--   pattern = '*',
+--   callback = function()
+--     if vim.bo.filetype ~= 'TelescopePrompt' then
+--       vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '<C-w>', { noremap = true, silent = true })
+--     end
+--   end,
+-- })
